@@ -1,0 +1,713 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+       
+}
+.navbar {
+    background-color: #0D6EFD;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.nav-list {
+    display: inline;
+    padding: 10px;
+    padding-top: 20px;  
+}
+.burger {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 30px;
+    display: none;
+}
+.navbar a {
+	color: #fff;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-list a:hover {
+    text-decoration: underline white;
+    color: #CADDF9;
+}
+.logo {
+    flex: auto;
+    padding-left: 30px;
+    
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0D6EFD;
+    color: white;
+    padding: 10px;
+    padding-top: 20px; 
+    font-size: 20px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    text-decoration: underline;
+    color: #CADDF9;
+  }
+  li {
+    list-style: none;
+  }
+  .boy {
+    background-image: url(./images/Capture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+   animation-name: moon;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+   
+}
+.boy1, .boy2, .boy3, .boy4{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 250px;
+    width: 750px;
+    color: white;
+    transform: translateY(300%);
+}
+.well {
+    font-family: sofia;
+    font-size: 80px;
+    
+}
+.wel {
+    font-family: sofia;
+    font-size: 20px;
+}
+
+.boy1 {
+    animation-name: boy1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.boy2 {
+    animation-name: boy2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.boy3 {
+    animation-name: boy3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.boy4 {
+    animation-name: boy3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.button {
+    height: 50px;
+    width: 230px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #eee;
+    margin: 10px;
+    
+}
+.button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+ 
+@keyframes moon {
+   
+    20% {
+        background-image: url(./images/nasa.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    35% {
+        background-image: url(./images/ramon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    70% {
+        background-image: url(./images/oshodi3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    90% {
+        background-image: url(./images/halljpg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+}
+@keyframes boy1 {
+    5% {
+        transform: translateY(0%);
+    }
+    20% {
+        transform: translateY(0%);
+    }
+    30% {
+        transform: translateY(300%);
+    }
+    60% {
+        transform: translateY(300%);
+    }
+}
+@keyframes boy2 {
+    0% {
+        transform: translateY(300%);
+    }
+    25% {
+        transform: translateY(300%);
+    }
+    30% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+}
+@keyframes boy3 {
+    0% {
+        transform: translateY(300%);
+    }
+    20% {
+        transform: translateY(300%);
+    }
+    30% {
+        transform: translateY(300%);
+    }
+    60% {
+        transform: translateY(300%);
+    }
+    70% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateY(0%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    
+}
+@keyframes boy4 {
+    0% {
+        transform: translateY(0%);
+    }
+    20% {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(300%);
+    }
+    80% {
+        transform: translateY(300%); 
+    } 
+}
+.container {
+    width: 100%;
+    text-align: center;
+    font-family: playball;
+    font-size: 20px;
+    color: #0D6EFD;
+    margin: 30px;
+}
+.active {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+}
+.image {
+    height: 130px;
+    width: 130px;
+    float: left;
+    padding-left: 10px;
+}
+.act {
+    height: 160px;
+    width: 310px;
+    margin-left: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+.acto {
+    text-align: right;
+    font-family: sofia;
+    color: gold; 
+    font-size: 25px; 
+    font-weight: bold;
+    padding: 10px;
+}
+.actoo {
+    text-align: right;
+    font-family: sofia;
+    color: #03214e;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.image1 {
+    height: 350px;
+    
+}
+.active1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+    background-color: #B0C4DE;
+}
+.act1 {
+    height: 350px;
+    width: 400px;
+}
+.acto1 {
+    padding: 20px;
+    font-family: playball;
+}
+.container1 {
+    width: 791px;
+    height: 526px;
+    background-image: url(./images/flexn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: cool;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+/*Animation activated by keyframes*/
+@keyframes cool {
+    5% {
+        background-image: url(./images/revn.jpg);
+    }
+    10% {
+        background-image: url(./images/rev22.jpg);
+    }
+    25% {
+        background-image: url(./images/month.jpg);
+    }
+    35% {
+        background-image: url(./images/elder.jpg);
+    }
+    50% {
+        background-image: url(./images/choir.jpg);
+    }
+    60% {
+        background-image: url(./images/menn.jpg);
+    }
+    70% {
+        background-image: url(./images/womenn.jpg);
+    }
+    80% {
+        background-image: url(./images/childrenn.jpg);
+    }
+    90% {
+        background-image: url(./images/oshodi20.jpg);
+    }
+    100% {
+        background-image: url(./images/buildingn.jpg);
+    }
+   
+}
+.conte {
+    display: flex;
+    flex-wrap: wrap;
+    height: 530px;
+    width: 100%;
+    margin: 20px;
+}
+#myvideo {
+  height: 300px;
+ 
+}
+.vibe {
+    padding-left: 20px;
+    height: 530px;
+}
+.vib {
+    text-align: center;
+    font-family: playball;
+    padding-top: 40px;
+    color: #03214e;;
+}
+.big {
+    background-image: url(./images/halljpg.jpg);
+    height: 100vh;
+    width: 100%;
+}
+.big1 {
+    background-image: url(./images/oshodi21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.big2 {
+    background-image: url(./images/buildingn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.big2:hover {
+    background-image: url(./images/Capture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.pool {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+.mapouter {
+	text-align: right;
+	width: 600px;
+	height: 400px;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none!important;
+	width: 600px;
+	height: 400px;
+}
+.gmap_iframe {
+	width: 600px!important;
+	height: 400px!important;
+}
+.cardy {
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    font-family: sofia;
+    margin-left: 20px;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+    width: 600px;
+    justify-content: center;
+}
+.cards {
+    height: 120px;
+    width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+
+}
+.cards h3 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+.cards a {
+    text-decoration: none;
+}
+.embed {
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.copy {
+    height: 100px;
+    width: auto;
+    background-color: #B0C4DE;
+    text-align: center;
+}
+.copy a {
+    text-decoration: none;
+    color: black;
+}
+.copy li {
+    padding-top: 15px;
+}
+.mag {
+    background-color: #eee;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-bottom: 20px;
+}
+label, .po {
+    padding: 12px;
+    color: #03214e;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B0C4DE;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+    border-radius: 10px;
+}
+input[type=text]:hover, select:hover, textarea:hover{
+    background-color: #B0C4DE;
+    border: 2px solid #03214e;
+}
+input[type=submit] {
+    background-color: #0D6EFD;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+input[type=submit]:hover {
+    background-color: red;
+}
+.po a {
+    text-decoration: none;
+}
+.mag h3 {
+    text-align: center;
+    padding: 12px;
+    color: #03214e;
+    font-family: playball;
+}
+.cop {
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    li {
+        display: block;
+        text-align: center;
+    }
+    .nav-list a:hover {
+        text-decoration: underline #383a3d;
+        color: #383a3d;
+    }
+    .burger {
+        display: block;
+    }
+    .dropdown:hover .dropbtn {
+        text-decoration: underline;
+        color: #383a3d;
+      }
+    .boy {
+        height: 100vh;
+        width: 600px;
+    }
+    .active {
+        height: 650px;
+    }
+    .boy {
+        background-image: url(./images/Capture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 600px;
+        position: relative;
+        overflow-y: hidden;
+       animation-name: moon;
+       animation-duration: 20s;
+       animation-iteration-count: infinite;
+       
+    }
+    .boy1, .boy2, .boy3, .boy4{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        height: 250px;
+        width: 600px;
+        color: white;
+        transform: translateY(300%);
+    }
+    .active1 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        width: 100%;
+        justify-content: center;
+        margin: 20px;
+        background-color: #B0C4DE;
+    }
+    .conte {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1060px;
+        width: 100%;
+        margin: 20px;
+    }
+    .container1 {
+        width: 600px;
+        height: 526px;
+        background-image: url(./images/flexn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: cool;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        border-radius: 20px;
+    }
+    .big {
+        background-image: url(./images/halljpg.jpg);
+        height: 100vh;
+        width: 100%;
+    }
+    .big1 {
+        background-image: url(./images/oshodi21.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .big2 {
+        background-image: url(./images/buildingn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .big2:hover {
+        background-image: url(./images/Capture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .pool {
+        display: flex;
+        flex-wrap: wrap;
+        height: 900px;
+        width: 100%;
+        justify-content: center;
+        margin: 20px;
+    }
+    .mapouter {
+        text-align: right;
+        width: 600px;
+        height: 400px;
+    }
+    .cardy {
+        height: 400px;
+        width: 600px;
+        text-align: center;
+        font-family: sofia;
+        margin-left: 20px;
+    }
+   
+    .nav-list {
+        display: block;  
+    }
+    .dropdown {
+        display: block;
+        justify-content: center;
+    }
+    .list {
+        position: absolute;
+        background-color: #0D6EFD;
+        z-index: 1;
+        right: 0px;
+        left: 0px;
+        top: 50px;
+        text-align: center;
+        clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+        transition-property: clip-path;
+        transition-duration: 3s;
+
+    }
+    .laggo {
+        width: 200px;
+    }
+    .burger {
+        display: block;
+        padding-top: 5px;
+        color: white;
+    }
+ 
+    .cue {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+}
+
+
+
